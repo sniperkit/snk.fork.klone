@@ -1,16 +1,23 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package container
 
 import (
 	"fmt"
-	"github.com/docker/cli/cli/command"
-	"github.com/docker/cli/cli/command/container"
-	cliflags "github.com/docker/cli/cli/flags"
-	"github.com/kris-nova/klone/pkg/local"
 	"io/ioutil"
 	"net/http"
 	"os"
 	"path"
 	"strings"
+
+	"github.com/docker/cli/cli/command"
+	"github.com/docker/cli/cli/command/container"
+	cliflags "github.com/docker/cli/cli/flags"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
 )
 
 type Options struct {
@@ -93,7 +100,7 @@ func (o *Options) init() {
 }
 
 var bootstrapFile = fmt.Sprintf("%s/.klone/BOOTSTRAP.sh", local.Home())
-var remoteBootstrapFileUrl = "https://raw.githubusercontent.com/kris-nova/klone/master/hack/BOOTSTRAP.sh"
+var remoteBootstrapFileUrl = "https://raw.githubusercontent.com/sniperkit/snk.fork.klone/master/hack/BOOTSTRAP.sh"
 
 func ensureBootstrapFileLocal() error {
 	wd, err := os.Getwd()

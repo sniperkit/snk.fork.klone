@@ -1,17 +1,24 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package e2e
 
 import (
 	"fmt"
-	"github.com/kris-nova/klone/pkg/auth"
-	"github.com/kris-nova/klone/pkg/klone"
-	"github.com/kris-nova/klone/pkg/klone/kloners/gogit"
-	"github.com/kris-nova/klone/pkg/local"
-	"github.com/kris-nova/klone/pkg/provider"
-	"github.com/kris-nova/klone/pkg/provider/github"
-	"gopkg.in/src-d/go-git.v4"
 	"os"
 	"strings"
 	"testing"
+
+	"gopkg.in/src-d/go-git.v4"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/auth"
+	"github.com/sniperkit/snk.fork.klone/pkg/klone"
+	"github.com/sniperkit/snk.fork.klone/pkg/klone/kloners/gogit"
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
+	"github.com/sniperkit/snk.fork.klone/pkg/provider/github"
 )
 
 var GitServer provider.GitServer

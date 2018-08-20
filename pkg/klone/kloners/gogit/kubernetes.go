@@ -1,8 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package gogit
 
 import (
 	"fmt"
-	"github.com/kris-nova/klone/pkg/provider"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
 )
 
 // Kubernetes does not follow the traditional path logic, so we have to hard code it

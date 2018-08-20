@@ -1,10 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package auth
 
 import (
 	"errors"
-	"github.com/kris-nova/klone/pkg/local"
+
 	"gopkg.in/src-d/go-git.v4/plumbing/transport"
 	"gopkg.in/src-d/go-git.v4/plumbing/transport/ssh"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
 )
 
 // Private key to use, defined in /cmd

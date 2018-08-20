@@ -1,9 +1,15 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package klone
 
 import (
-	"github.com/kris-nova/klone/pkg/local"
-	"github.com/kris-nova/klone/pkg/provider"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
 )
 
 type QueryInformation struct {

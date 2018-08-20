@@ -1,8 +1,14 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package e2e
 
 import (
-	"github.com/kris-nova/klone/pkg/klone"
 	"os"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/klone"
 )
 
 func IdempotentKlone(path, query string) error {

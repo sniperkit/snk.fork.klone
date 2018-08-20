@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright © 2017 Kris Nova <kris@nivenly.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,10 +25,11 @@
 //
 // main.go The primary entry point of the program. Can be used with "go get"
 
-
 package main
 
-import "github.com/kris-nova/klone/cmd"
+import (
+	"github.com/sniperkit/snk.fork.klone/cmd"
+)
 
 func main() {
 	cmd.Execute()

@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright © 2017 Kris Nova <kris@nivenly.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,14 +31,16 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	"github.com/google/go-github/github"
-	"github.com/kris-nova/klone/pkg/local"
-	"github.com/kris-nova/klone/pkg/provider"
-	"golang.org/x/crypto/ssh/terminal"
-	"golang.org/x/oauth2"
 	"os"
 	"strings"
 	"syscall"
+
+	"github.com/google/go-github/github"
+	"golang.org/x/crypto/ssh/terminal"
+	"golang.org/x/oauth2"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
 )
 
 var (
@@ -43,7 +50,7 @@ var (
 )
 
 const (
-	AccessTokenNote = "Access token automatically managed my Klone. More information: https://github.com/kris-nova/klone."
+	AccessTokenNote = "Access token automatically managed my Klone. More information: https://github.com/sniperkit/snk.fork.klone."
 )
 
 // GitServer is a representation of GitHub.com, by design we never store credentials here in memory

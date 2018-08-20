@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright © 2017 Kris Nova <kris@nivenly.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,8 +29,9 @@ package local
 
 import (
 	"fmt"
-	"github.com/fatih/color"
 	"os"
+
+	"github.com/fatih/color"
 )
 
 func PrintPrompt(msg string) {

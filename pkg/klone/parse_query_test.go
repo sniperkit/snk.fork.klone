@@ -1,11 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package klone
 
 import (
 	"fmt"
-	"github.com/kris-nova/klone/pkg/provider"
 	"os"
 	"strings"
 	"testing"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
 )
 
 // Repositories we know we can test with
@@ -86,7 +92,7 @@ func TestParseQuerySingleGithub(t *testing.T) {
 // TestParseQueryDoubleGithub will test that the single query "klone-e2e-query" will return
 // the proper QueryInformation
 func TestParseQueryDoubleGithub(t *testing.T) {
-	b, q := ParseQuery("kris-nova/klone-e2e-query")
+	b, q := ParseQuery("sniperkit/snk.fork.klone-e2e-query")
 	if !b {
 		t.Fatal("Unable to parse double query")
 	}
@@ -104,7 +110,7 @@ func TestParseQueryDoubleGithub(t *testing.T) {
 // TestParseQueryTripleGithub will test that the single query "klone-e2e-query" will return
 // the proper QueryInformation
 func TestParseQueryTripleGithub(t *testing.T) {
-	b, q := ParseQuery("github.com/kris-nova/klone-e2e-query")
+	b, q := ParseQuery("github.com/sniperkit/snk.fork.klone-e2e-query")
 	if !b {
 		t.Fatal("Unable to parse triple query")
 	}

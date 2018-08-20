@@ -1,11 +1,17 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package klone
 
 import (
 	"fmt"
-	"github.com/kris-nova/klone/pkg/local"
-	"github.com/kris-nova/klone/pkg/provider"
 	"strings"
 	"time"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
 )
 
 const waitForForkSeconds = 10

@@ -1,16 +1,23 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 package gogit
 
 import (
 	"fmt"
-	//"github.com/kris-nova/klone/pkg/auth"
-	"github.com/kris-nova/klone/pkg/auth"
-	"github.com/kris-nova/klone/pkg/klone/kloners"
-	"github.com/kris-nova/klone/pkg/local"
-	"github.com/kris-nova/klone/pkg/provider"
-	"gopkg.in/src-d/go-git.v4"
-	"gopkg.in/src-d/go-git.v4/config"
+	//"github.com/sniperkit/snk.fork.klone/pkg/auth"
 	"os"
 	"strings"
+
+	"gopkg.in/src-d/go-git.v4"
+	"gopkg.in/src-d/go-git.v4/config"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/auth"
+	"github.com/sniperkit/snk.fork.klone/pkg/klone/kloners"
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
 )
 
 type Kloner struct {
@@ -39,7 +46,7 @@ func (k *Kloner) Clone(repo provider.Repo) (string, error) {
 			k.r = r
 			return path, nil
 		} else if strings.Contains(err.Error(), "unknown capability") {
-			// Todo (@kris-nova) handle capability errors better https://github.com/kris-nova/klone/issues/5
+			// Todo (@kris-nova) handle capability errors better https://github.com/sniperkit/snk.fork.klone/issues/5
 			local.RecoverableErrorf("bypassing capability error: %v ", err)
 		} else {
 			return "", fmt.Errorf("unable to clone repository: %v", err)

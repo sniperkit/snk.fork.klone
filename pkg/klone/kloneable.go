@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright © 2017 Kris Nova <kris@nivenly.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,12 +29,13 @@ package klone
 
 import (
 	"errors"
-	"github.com/kris-nova/klone/pkg/klone/kloners"
-	"github.com/kris-nova/klone/pkg/klone/kloners/gogit"
-	"github.com/kris-nova/klone/pkg/klone/kloners/simple"
-	"github.com/kris-nova/klone/pkg/local"
-	"github.com/kris-nova/klone/pkg/provider"
 	"strings"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/klone/kloners"
+	"github.com/sniperkit/snk.fork.klone/pkg/klone/kloners/gogit"
+	"github.com/sniperkit/snk.fork.klone/pkg/klone/kloners/simple"
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
 )
 
 const (

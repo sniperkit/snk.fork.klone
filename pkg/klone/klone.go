@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright © 2017 Kris Nova <kris@nivenly.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -26,7 +31,8 @@ package klone
 
 import (
 	"fmt"
-	"github.com/kris-nova/klone/pkg/local"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
 )
 
 type Style int

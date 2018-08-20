@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright © 2017 Kris Nova <kris@nivenly.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,12 +29,14 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/kris-nova/klone/pkg/auth"
-	"github.com/kris-nova/klone/pkg/container"
-	"github.com/kris-nova/klone/pkg/klone"
-	"github.com/kris-nova/klone/pkg/local"
-	"github.com/spf13/cobra"
 	"os"
+
+	"github.com/spf13/cobra"
+
+	"github.com/sniperkit/snk.fork.klone/pkg/auth"
+	"github.com/sniperkit/snk.fork.klone/pkg/container"
+	"github.com/sniperkit/snk.fork.klone/pkg/klone"
+	"github.com/sniperkit/snk.fork.klone/pkg/local"
 )
 
 var RootCmd = &cobra.Command{

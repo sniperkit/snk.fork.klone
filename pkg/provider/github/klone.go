@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright © 2017 Kris Nova <kris@nivenly.com>
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -23,7 +28,7 @@
 package github
 
 import (
-	"github.com/kris-nova/klone/pkg/provider"
+	"github.com/sniperkit/snk.fork.klone/pkg/provider"
 )
 
 type KloneProvider struct {
